@@ -17,3 +17,7 @@ export class TabsPage {
 
   }
 }
+
+export class BasicPage {
+  rootPage = TabsPage;
+}

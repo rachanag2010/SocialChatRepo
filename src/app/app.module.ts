@@ -8,6 +8,7 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { RecentPage } from '../pages/recent/recent';
 import { GroupPage } from '../pages/group/group';
+import { TabsPage} from '../pages/tabs/tabs';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ItemDetailsPage,
     ListPage,
     RecentPage,
-    GroupPage
+    GroupPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ItemDetailsPage,
     ListPage,
     RecentPage,
-    GroupPage
+    GroupPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
