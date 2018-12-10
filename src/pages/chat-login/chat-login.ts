@@ -1,16 +1,38 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, Loading } from 'ionic-angular';
+import {  NavController, Loading } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
+import { User } from '../../app/user';
+
+
+
 
 @Component({
   selector: 'page-chat-login',
   templateUrl: 'chat-login.html'
 })
 export class ChatLoginPage {
+  user: User
+
+
+  login() {
+    this.presentLoadingDefault(); // present loader
+    this.redirectToPages(this.user);
+
+  }
+
+  presentLoadingDefault() {
+    this.loading.present();
+  }
+  redirectToPages(user: User){
+    this.navCtrl.setRoot(TabsPage);
+
+  }
+
+  loading: Loading;
   constructor(
     public navCtrl: NavController
-  ) {
+) {
     
-
   }
   // tabs() {
   //   this.navCtrl.push(TabsPage);
