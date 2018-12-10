@@ -1,4 +1,21 @@
 <ion-content padding>
-    <ion-icon class=fb ios="logo-facebook" md="logo-facebook"></ion-icon>
-    <ion-header> This is a Recent Conersations Page</ion-header>
+    <ion-icon ></ion-icon>
+   
+<ion-header >
+        <ion-searchbar
+        [(ngModel)]="myInput"
+        [showCancelButton]="shouldShowCancel"
+        (ionInput)="onInput($event)"
+        (ionCancel)="onCancel($event)"  
+        placeholder = "Search For Chats or Contacts" no-border-bottom>
+      </ion-searchbar>
+</ion-header>
+<ion-item>
+</ion-item>
+      <ion-item>
+          <p>This is a Recent Conersations Page</p>
+      </ion-item>
+<p>This is a Recent Conersations Page</p>
+<p>This is a Recent Conersations Page</p>
+
 </ion-content>

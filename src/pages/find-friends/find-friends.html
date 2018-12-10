@@ -1,4 +1,23 @@
 <ion-content padding>
-        <ion-icon class=fb ios="logo-facebook" md="logo-facebook"></ion-icon>
-        <ion-header> This is a Find Friends Page</ion-header>
-</ion-content>
+                <ion-icon >
+
+                </ion-icon>
+               
+        <ion-header>
+                <ion-searchbar
+                [(ngModel)]="myInput"
+                [showCancelButton]="shouldShowCancel"
+                (ionInput)="onInput($event)"
+                (ionCancel)="onCancel($event)"  
+                placeholder = "Search For Friends">
+                </ion-searchbar>
+        </ion-header>
+                <p>
+                <b></b>
+                <b></b>
+                </p>
+            <p>This is a Find Friends Page</p>
+            <p>This is a Find Friends Page</p>
+            <p>This is a Find Friends Page</p>
+            
+ </ion-content>
