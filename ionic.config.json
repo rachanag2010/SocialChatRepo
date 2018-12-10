@@ -1,0 +1,7 @@
+{
+  "name": "SocialChat",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

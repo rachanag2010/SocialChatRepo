@@ -1,0 +1,71 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Register</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content padding>
+      <ion-grid>
+      <form (ngSubmit)="login()">
+        
+    
+        <ion-item>
+            <ion-label  floating>First Name</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        
+        <ion-item>
+              <ion-label  floating>Last Name</ion-label>
+              <ion-input></ion-input>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input ></ion-input>
+          </ion-item>
+        
+        <ion-item>
+          <ion-label  floating>Email</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input  type="password"  ></ion-input>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label  floating>Confirm Password</ion-label>
+            <ion-input  type="password"  ></ion-input>
+          </ion-item>
+         
+  
+          <ion-row>
+              <div class="password_info">
+                <ion-label> 
+                  <b>*Password* </b>Minimum length: 6 characters.</ion-label>
+                  <b> <p>***First and last name are optional.***</p>  </b>
+              </div>
+          </ion-row>
+  
+          <ion-fab bottom right>
+              <button type="submit" >
+                  <ion-icon name="arrow-dropright" isActive=true></ion-icon>
+              </button>
+          </ion-fab>
+  
+      </form>
+    
+     
+  </ion-grid>
+  </ion-content>
+    
+    
