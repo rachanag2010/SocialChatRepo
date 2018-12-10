@@ -34,7 +34,5 @@ export class ChatLoginPage {
 ) {
     
   }
-  // tabs() {
-  //   this.navCtrl.push(TabsPage);
-  // }
+
 }
