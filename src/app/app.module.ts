@@ -8,6 +8,8 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { RecentPage } from '../pages/recent/recent';
 import { GroupPage } from '../pages/group/group';
+import { FindFriendsPage } from '../pages/find-friends/find-friends';
+import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage} from '../pages/tabs/tabs';
 
 
@@ -22,6 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     RecentPage,
     GroupPage,
+    FindFriendsPage,
+    ProfilePage,
     TabsPage
   ],
   imports: [
@@ -36,6 +40,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     RecentPage,
     GroupPage,
+    FindFriendsPage,
+    ProfilePage,
     TabsPage
   ],
   providers: [
