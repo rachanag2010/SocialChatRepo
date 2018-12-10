@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import {RecentPage} from '../recent/recent';
 import { GroupPage } from '../group/group';
+import { FindFriendsPage } from '../find-friends/find-friends';
+import { ProfilePage } from '../profile/profile'
 
 
 
@@ -12,6 +14,8 @@ export class TabsPage {
 
   tab1Root = RecentPage;
   tab2Root = GroupPage;
+  tab3Root = FindFriendsPage;
+  tab4Root = ProfilePage;
   
   constructor() {
 
