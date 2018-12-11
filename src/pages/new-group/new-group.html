@@ -1,0 +1,257 @@
+<!-- <ion-header>
+        <ion-toolbar>
+                <ion-navbar text-center>
+                        This is a placeholder for tabs name like "recent chats" or "group chat" etc.
+                </ion-navbar>
+        </ion-toolbar>
+</ion-header>
+          
+<ion-content padding>
+        <ion-icon >
+
+        </ion-icon>
+       
+<ion-header>
+
+</ion-header>
+        <p>
+        <b></b>
+        <b></b>
+        </p>
+    <p>This is a User Profile Page</p>
+    <p>This is a User Profile Page</p>
+    <p>This is a User Profile Page</p>
+    
+</ion-content> -->
+
+
+<ion-header>
+                <ion-navbar>
+                        <p>
+                                <button ion-button color="dark" icon-start float-left  clear>
+                                        <ion-icon name='arrow-back'></ion-icon>
+                                        Back
+                                </button>
+                                
+        
+                                <button ion-button color="dark" icon-end float-right clear>
+                                        Create Group
+                                        <ion-icon name='arrow-forward'></ion-icon>
+                                </button>
+                                <ion-title text-center>New Group</ion-title>
+        
+                        </p>
+                </ion-navbar>
+        </ion-header>
+        
+
+<ion-content>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="..\..\..\www\assets\imgs\avatar.png">
+                        </ion-avatar>
+                
+
+                        <ion-label color="primary" stacked>GroupName</ion-label>
+                        <ion-input placeholder="Enter the Group Name"></ion-input>
+                </ion-item>
+        </ion-list>
+        <ion-list-header>
+                Selected Group Members
+        </ion-list-header>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="img/avatar-cher.png">
+                        </ion-avatar>
+                        <h2>Name</h2>
+                        <p>Recent Message</p>
+                </ion-item>
+        </ion-list>
+
+
+        <ion-list-header>
+                Add New Members
+        </ion-list-header>
+        <ion-searchbar placeholder="search for contacts" (ionInput)="getItems($event)"></ion-searchbar>
+        <ion-list>
+                <ion-item *ngFor="let item of items">
+                        {{ item }}
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="img/avatar-cher.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>Recent Message</p>
+                        </ion-item>
+                </ion-list>
+
+
+</ion-content>
+

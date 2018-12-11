@@ -5,6 +5,13 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { ChatLoginPage } from '../pages/chat-login/chat-login';
 import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ItemDetailsPage } from '../pages/item-details/item-details';
+import { RecentPage } from '../pages/recent/recent';
+import { GroupPage } from '../pages/group/group';
+import { FindFriendsPage } from '../pages/find-friends/find-friends';
+import { ProfilePage } from '../pages/profile/profile';
+import { NewGroupPage } from '../pages/new-group/new-group';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +25,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   // rootPage = ChatLoginPage;
-     rootPage = TabsPage;
+     rootPage = NewGroupPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -34,7 +41,8 @@ export class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: ChatLoginPage },
       { title: 'My First List', component: ListPage },
-      { title: ' tabs page', component: TabsPage}
+      { title: ' tabs page', component: TabsPage},
+      { title: 'new group page', component: NewGroupPage}
     ];
   }
 

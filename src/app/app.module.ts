@@ -11,6 +11,8 @@ import { GroupPage } from '../pages/group/group';
 import { FindFriendsPage } from '../pages/find-friends/find-friends';
 import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage} from '../pages/tabs/tabs';
+import { NewGroupPage } from '../pages/new-group/new-group';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -26,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GroupPage,
     FindFriendsPage,
     ProfilePage,
-    TabsPage
+    TabsPage,
+    NewGroupPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GroupPage,
     FindFriendsPage,
     ProfilePage,
-    TabsPage
+    TabsPage,
+    NewGroupPage
   ],
   providers: [
     StatusBar,
