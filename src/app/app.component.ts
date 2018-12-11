@@ -26,7 +26,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   // rootPage = ChatLoginPage;
-     rootPage = GroupDetailsPage;
+     rootPage = FindFriendsPage;
 
   pages: Array<{title: string, component: any}>;
 

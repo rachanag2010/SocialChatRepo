@@ -1,23 +1,162 @@
 <ion-content padding>
-                <ion-icon >
+        <ion-icon>
 
-                </ion-icon>
-               
-        <ion-header>
-                <ion-searchbar
-                [(ngModel)]="myInput"
-                [showCancelButton]="shouldShowCancel"
-                (ionInput)="onInput($event)"
-                (ionCancel)="onCancel($event)"  
-                placeholder = "Search For Friends">
+        </ion-icon>
+
+        <!-- <ion-header>
+                <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+                        (ionCancel)="onCancel($event)" placeholder="Search For Friends">
                 </ion-searchbar>
-        </ion-header>
-                <p>
+        </ion-header> -->
+        <p>
                 <b></b>
                 <b></b>
-                </p>
-            <p>This is a Find Friends Page</p>
-            <p>This is a Find Friends Page</p>
-            <p>This is a Find Friends Page</p>
-            
- </ion-content>
+        </p>
+
+
+
+
+
+
+<ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="friends" color="primary">
+                <ion-segment-button value="friendsList">
+                        Friends List
+                </ion-segment-button>
+                <ion-segment-button value="friendRequests">
+                        Friend Requests
+                </ion-segment-button>
+                <ion-segment-button value="friendSuggestions">
+                        Find New Friends
+                </ion-segment-button>
+        </ion-segment>
+</ion-toolbar>
+
+
+<ion-content>
+        <div [ngSwitch]="friends">
+
+                <ion-list *ngSwitchCase="'friendsList'">
+
+
+
+                                <ion-searchbar
+                                [(ngModel)]="myInput"
+                                [showCancelButton]="shouldShowCancel"
+                                (ionInput)="onInput($event)"
+                                (ionCancel)="onCancel($event)" placeholder="Search for Friends">
+                              </ion-searchbar>
+
+
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Friend 1</h2>
+                        </ion-item>
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Friend 2</h2>
+                        </ion-item>
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Friend 3</h2>
+                        </ion-item>
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Freind 4</h2>
+                        </ion-item>
+                </ion-list>
+
+                <ion-list *ngSwitchCase="'friendRequests'">
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Request 1</h2>
+                        </ion-item>
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Request 2</h2>
+                        </ion-item>
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Request 3</h2>
+                        </ion-item>
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Request 4</h2>
+                        </ion-item>
+                </ion-list>
+
+                <ion-list *ngSwitchCase="'friendSuggestions'">
+
+                                <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)"
+  placeholder="Type a name to search">
+</ion-searchbar>
+
+
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Suggestion 1</h2>
+                                <button ion-button>
+                                        <ion-icon name="checkmark-circle"></ion-icon>
+                                </button>
+                                <button ion-button>
+                                        <ion-icon name="close-circle"></ion-icon>
+                                </button>
+                        </ion-item>
+<ion-item>
+        <ion-content>
+                <ion-list>
+                        
+                        <ion-thumbnail item-start>
+                                <img src="../../assets/imgs/avatar.png">
+                        </ion-thumbnail>
+                        <div item-right>
+                                <button ion-button>
+                                        <ion-icon name="checkmark-circle"></ion-icon>
+                                </button>
+                                <button ion-button>
+                                        <ion-icon name="close-circle"></ion-icon>
+                                </button>
+                        </div>
+                </ion-list>
+        </ion-content>
+</ion-item>
+
+
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Suggestion 3</h2>
+                        </ion-item>
+                        <ion-item>
+                                <ion-thumbnail item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-thumbnail>
+                                <h2>Suggestion 4</h2>
+                        </ion-item>
+                </ion-list>
+        </div>
+</ion-content>
+</ion-content>
