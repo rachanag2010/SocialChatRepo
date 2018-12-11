@@ -1,0 +1,74 @@
+<ion-header>
+        <ion-navbar>
+                <button ion-button color="dark" icon-start float-left clear>
+                        <ion-icon name='arrow-back'></ion-icon>
+                        Back
+                </button>
+                <ion-title text-center>Group Details</ion-title>
+        </ion-navbar>
+</ion-header>
+<ion-content>
+        <ion-grid>
+                <ion-row>
+                        <ion-col col-1>
+                                <button ion-button color="dark" clear icon-only large>
+                                        <ion-icon name='person' is-active="false"></ion-icon>
+                                </button>
+                        </ion-col>
+                        <ion-col>
+                                <ion-label color="primary" stacked>GroupName</ion-label>
+                                <ion-input placeholder="Enter the Group Name"></ion-input>
+                        </ion-col>
+
+                </ion-row>
+        </ion-grid>
+
+        <ion-list-header>
+                GROUP MEMBERS
+        </ion-list-header>
+        <button ion-button color="secondary" clear>
+                <ion-icon name='add'></ion-icon>
+                Add Members
+        </button>
+        <ion-scroll style="height: 200px" scrollY="true">
+                <ion-list>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>status</p>
+                        </ion-item>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>status</p>
+                        </ion-item>
+
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>status</p>
+                        </ion-item>
+                        <ion-item>
+                                <ion-avatar item-start>
+                                        <img src="../../assets/imgs/avatar.png">
+                                </ion-avatar>
+                                <h2>Name</h2>
+                                <p>status</p>
+                        </ion-item>
+                </ion-list>
+        </ion-scroll>
+
+
+        <ion-list-header>
+                MORE
+        </ion-list-header>
+
+        <button ion-button color="danger" clear (click)="showConfirm()">Exit Group</button>
+
+</ion-content>
