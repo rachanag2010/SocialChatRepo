@@ -12,6 +12,7 @@ import { FindFriendsPage } from '../pages/find-friends/find-friends';
 import { ProfilePage } from '../pages/profile/profile';
 import { NewGroupPage } from '../pages/new-group/new-group';
 import { GroupDetailsPage } from '../pages/group-details/group-details';
+import { SingleChatDetailPage } from '../pages/single-chat-detail/single-chat-detail';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -26,7 +27,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   // rootPage = ChatLoginPage;
-     rootPage = FindFriendsPage;
+     rootPage = TabsPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -44,7 +45,8 @@ export class MyApp {
       { title: 'My First List', component: ListPage },
       { title: ' tabs page', component: TabsPage},
       { title: 'new group page', component: NewGroupPage},
-      { title: 'group info page', component: GroupDetailsPage}
+      { title: 'group info page', component: GroupDetailsPage},
+      { title: 'single chat detail', component: SingleChatDetailPage}
     ];
   }
 

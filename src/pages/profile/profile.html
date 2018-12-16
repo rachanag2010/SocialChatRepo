@@ -1,4 +1,4 @@
-<ion-content padding>
+<!-- <ion-content padding>
         <ion-icon >
 
         </ion-icon>
@@ -14,4 +14,37 @@
     <p>This is a User Profile Page</p>
     <p>This is a User Profile Page</p>
     
+</ion-content> -->
+
+
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button color="dark" icon-start float-left clear>
+            <ion-icon name='arrow-back'></ion-icon>
+            Back
+    </button>
+    <ion-title text-center>Profile</ion-title>
+</ion-navbar>
+</ion-header> -->
+
+<ion-content>
+    <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/avatar.png">
+          <!-- <ion-icon name='person' is-active="false"></ion-icon> -->
+
+        </ion-avatar>
+        <h2>USERNAME</h2>
+        <p>Rachana Gurram</p>
+</ion-item>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
 </ion-content>
+      

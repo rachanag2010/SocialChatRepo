@@ -13,6 +13,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage} from '../pages/tabs/tabs';
 import { NewGroupPage } from '../pages/new-group/new-group';
 import { GroupDetailsPage } from '../pages/group-details/group-details';
+import { SingleChatDetailPage } from '../pages/single-chat-detail/single-chat-detail';
 
 
 
@@ -31,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     TabsPage,
     NewGroupPage,
-    GroupDetailsPage
+    GroupDetailsPage,
+    SingleChatDetailPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     TabsPage,
     NewGroupPage,
-    GroupDetailsPage
+    GroupDetailsPage,
+    SingleChatDetailPage
   ],
   providers: [
     StatusBar,

@@ -1,26 +1,47 @@
 <ion-content padding>
-    <ion-icon ></ion-icon>
-   
-<ion-header >
-        <ion-searchbar
-        [(ngModel)]="myInput"
-        [showCancelButton]="shouldShowCancel"
-        (ionInput)="onInput($event)"
-        (ionCancel)="onCancel($event)"  
-        placeholder = "Search For Chats or Contacts" >
-      </ion-searchbar>
-</ion-header>
-<ion-item>
-</ion-item>
-      <ion-item>
-          <p>This is a Recent Conersations Page</p>
-      </ion-item>
-<p>This is a Recent Conersations Page</p>
-<p>This is a Recent Conersations Page</p>
+        <ion-icon>
+
+        </ion-icon>
+
+        <ion-header>
+                <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+                        (ionCancel)="onCancel($event)" placeholder="Search For Chats or Contacts">
+                </ion-searchbar>
+        </ion-header>
+        <p>
+                <b></b>
+                <b></b>
+        </p>
+
+        <p>
+                <b></b>
+                <b></b>
+        </p>
 
 
-
-
+        <!-- <ion-item>
+                <p>This is a Recent Conersations Page</p>
+        </ion-item> -->
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="..\..\..\www\assets\imgs\avatar.png">
+                        </ion-avatar>
+                        <h2>Username</h2>
+                        <!-- <h3>Don't Know What To Do!</h3> -->
+                        <p>Most recent message</p>
+                </ion-item>
+        </ion-list>
+        <ion-list>
+                <ion-item>
+                        <ion-avatar item-start>
+                                <img src="..\..\..\www\assets\imgs\avatar.png">
+                        </ion-avatar>
+                        <h2>Username</h2>
+                        <!-- <h3>Don't Know What To Do!</h3> -->
+                        <p>Most recent message</p>
+                </ion-item>
+        </ion-list>
         <ion-list>
                 <ion-item>
                         <ion-avatar item-start>
