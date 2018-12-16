@@ -13,7 +13,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { NewGroupPage } from '../pages/new-group/new-group';
 import { GroupDetailsPage } from '../pages/group-details/group-details';
 import { SingleChatDetailPage } from '../pages/single-chat-detail/single-chat-detail';
-
+import { ProfileDetailsPage } from '../pages/profile-details/profile-details';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -46,7 +46,8 @@ export class MyApp {
       { title: ' tabs page', component: TabsPage},
       { title: 'new group page', component: NewGroupPage},
       { title: 'group info page', component: GroupDetailsPage},
-      { title: 'single chat detail', component: SingleChatDetailPage}
+      { title: 'single chat detail', component: SingleChatDetailPage},
+      { title: 'profile detail', component: ProfileDetailsPage}
     ];
   }
 
