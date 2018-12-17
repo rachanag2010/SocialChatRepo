@@ -15,6 +15,8 @@ import { GroupDetailsPage } from '../pages/group-details/group-details';
 import { SingleChatDetailPage } from '../pages/single-chat-detail/single-chat-detail';
 import { ProfileDetailsPage } from '../pages/profile-details/profile-details';
 import { AccountPage } from '../pages/account/account';
+import { PrivacyPage } from '../pages/privacy/privacy';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +30,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   // rootPage = ChatLoginPage;
-     rootPage = AccountPage;
+     rootPage = PrivacyPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -50,7 +52,8 @@ export class MyApp {
       { title: 'single chat detail', component: SingleChatDetailPage},
       { title: 'profile', component: ProfilePage},
       { title: 'profile detail', component: ProfileDetailsPage},
-      { title: 'account', component: AccountPage}
+      { title: 'account', component: AccountPage},
+      { title: 'privacy', component: PrivacyPage},
     ];
   }
 

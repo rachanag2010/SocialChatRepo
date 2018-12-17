@@ -3,7 +3,7 @@
         <button menuToggle *ngIf="!selectedItem">
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>Profile Details</ion-title>
+        <ion-title *ngIf="selectedItem">{{selectedItem.title}}</ion-title>
     </ion-navbar>
 </ion-header>
 

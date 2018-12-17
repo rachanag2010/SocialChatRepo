@@ -1,0 +1,59 @@
+<ion-header>
+                <ion-navbar>
+                        <button ion-button color="dark" icon-start float-left clear>
+                                <ion-icon name='arrow-back'></ion-icon>
+                                <ion-title text-start>Privacy</ion-title>
+
+                        </button>
+                </ion-navbar>
+        </ion-header>
+<!-- 
+<ion-content>
+        <ion-item>
+                <h2>Who can see my personal info</h2> 
+        </ion-item>
+        <ion-scroll style="height: 200px" scrollY="true">
+                <ion-list>
+                        <ion-item>
+                                <h2>Name</h2>
+                        </ion-item>
+                        <ion-item>
+                                <h2>Name</h2>
+                        </ion-item>
+                </ion-list>
+        </ion-scroll>
+</ion-content> -->
+
+<!-- <ion-card>
+    <ion-card-header>
+            Who can see my personal info
+    </ion-card-header>
+
+    <ion-list>
+        <button ion-item>
+            <ion-icon name="cart" item-start></ion-icon>
+            Profile Photo
+        </button>
+
+        <button ion-item>
+            <ion-icon name="medical" item-start></ion-icon>
+            Status
+        </button>
+    </ion-list>
+</ion-card> -->
+
+<ion-content padding>
+        <ion-item>
+                <button ion-button style="text-transform: none;" color="dark" clear (click)="doRadio()">
+                        <ion-title>Profile Photo
+                        </ion-title>
+                </button>
+        </ion-item>
+        <ion-item>
+        <button ion-button clear style="text-transform: none;" color="dark"  (click)="doRadio()">
+                        <ion-title>Status
+                                </ion-title>
+                </button>
+</ion-item>
+</ion-content>
+              
