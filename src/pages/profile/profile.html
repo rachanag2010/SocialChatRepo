@@ -27,41 +27,24 @@
         <p>Rachana Gurram</p>
 </ion-item>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
+    <button ion-item  (click)="openAccountPage()">
+      <ion-icon name="key" item-left></ion-icon>
+      Account
+    </button>
+    <button ion-item  (click)="doPrompt()">
+      <ion-icon name="bluetooth" item-left></ion-icon>
+      Update email
+    </button>
+    <button ion-item  >
+      <ion-icon name="notifications" item-left></ion-icon>
+      <ion-toggle value="foo" checked="true"></ion-toggle>
+      <ion-label>Notifications</ion-label>
+    </button>
+    <button ion-item  (click)="openHelpPage()">
+      <ion-icon name="help" item-left></ion-icon>
+      Help
     </button>
   </ion-list>
 </ion-content>
       
-<!-- <button ion-item  (click)="itemTapped($event, item)">
-  <ion-icon name="key" item-left></ion-icon>
-  Account
-  <div class="item-note" item-right>
-      Account
-  </div>
-</button>
-<button ion-item  (click)="itemTapped($event, item)">
-  <ion-icon name="key" item-left></ion-icon>
-  Account
-  <div class="item-note" item-right>
-      Account
-  </div>
-</button>
-<button ion-item  (click)="itemTapped($event, item)">
-  <ion-icon name="key" item-left></ion-icon>
-  Account
-  <div class="item-note" item-right>
-      Account
-  </div>
-</button>
-<button ion-item  (click)="itemTapped($event, item)">
-  <ion-icon name="key" item-left></ion-icon>
-  Account
-  <div class="item-note" item-right>
-      Account
-  </div>
-</button> -->
+
