@@ -2,25 +2,40 @@
   <ion-navbar>
       <button ion-button color="dark" icon-start float-left clear>
           <ion-icon name='arrow-back'></ion-icon>
-          
+          <ion-title>Account</ion-title>
   </button>
-      <button menuToggle *ngIf="!selectedItem">
+      <!-- <button menuToggle *ngIf="!selectedItem">
           <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Account</ion-title>
+      </button> -->
   </ion-navbar>
 </ion-header>
 
 <ion-content>
  
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+    <!-- <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon name="{{item.icon}}" item-left></ion-icon>
       {{item.title}}
       <div class="item-note" item-right>
         {{item.note}}
       </div>
+    </button> -->
+
+    <button ion-item  (click)="openPrivacyPage()">
+      <ion-icon name="key" item-left></ion-icon>
+      Privacy
     </button>
+
+    <button ion-item  (click)="doPrompt()">
+      <ion-icon name="bluetooth" item-left></ion-icon>
+      Change Number
+    </button>
+
+    <button ion-item  (click)="openPrivacyPage()">
+      <ion-icon name="notifications" item-left></ion-icon>
+      Delete My Account
+    </button>
+
   </ion-list>
 </ion-content>
       

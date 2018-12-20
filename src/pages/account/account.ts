@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { ProfileDetailsPage } from '../profile-details/profile-details';
+import { PrivacyPage } from '../privacy/privacy';
 
 @IonicPage()
 @Component({
@@ -14,7 +15,7 @@ export class AccountPage {
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
     this.icons = ['key', 'bluetooth', 'notifications', 'help-circle-outline'];
     this.items = [];
     this.items.push({
@@ -39,6 +40,41 @@ export class AccountPage {
       item: item
     });
   }
+
+  openPrivacyPage() {
+    this.navCtrl.push(PrivacyPage);
+  }
+  
+  doPrompt() {
+    let prompt = this.alertCtrl.create({
+      title: 'Login',
+      message: "Enter a name for this new album you're so keen on adding",
+      inputs: [
+        {
+          name: 'title',
+          placeholder: 'Title'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    prompt.present();
+  }
+
+
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad AccountPage');
   }

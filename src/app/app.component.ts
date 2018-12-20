@@ -30,7 +30,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   // rootPage = ChatLoginPage;
-     rootPage = PrivacyPage;
+     rootPage = ProfilePage;
 
   pages: Array<{title: string, component: any}>;
 
