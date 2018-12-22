@@ -5,6 +5,8 @@ import { MyApp } from './app.component';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
 import { ChatLoginPage } from '../pages/chat-login/chat-login';
+import { SignUpPage } from '../pages/signup/signup';
+
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { RecentPage } from '../pages/recent/recent';
@@ -29,6 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     ChatLoginPage,
+    SignUpPage,
     ItemDetailsPage,
     ListPage,
     RecentPage,
@@ -54,6 +57,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     ChatLoginPage,
+    SignUpPage,
     ItemDetailsPage,
     ListPage,
     RecentPage,

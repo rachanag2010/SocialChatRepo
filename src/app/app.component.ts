@@ -3,6 +3,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { ChatLoginPage } from '../pages/chat-login/chat-login';
+import { SignUpPage } from '../pages/signup/signup';
+
 import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
@@ -32,8 +34,8 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  // rootPage = ChatLoginPage;
-     rootPage = TabsPage;
+  rootPage = ChatLoginPage;
+    //  rootPage = TabsPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -48,6 +50,7 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: ChatLoginPage },
+      { title: 'Sign Up', component: SignUpPage },
       { title: 'My First List', component: ListPage },
       { title: ' tabs page', component: TabsPage},
       { title: ' Item Details page', component: ItemDetailsPage},

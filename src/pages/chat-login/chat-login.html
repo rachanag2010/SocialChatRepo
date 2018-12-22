@@ -1,21 +1,14 @@
 
 <ion-header>
-
   <ion-navbar>
     <ion-title align-title="center">Login</ion-title>
     <img src="assets/imgs/chatIcon.png" >
-    
-  </ion-navbar>
-
+      </ion-navbar>
 </ion-header>
 
-
+<ion-content padding>
   <form (ngSubmit)="login()">
-    <ion-item>
-      <ion-label floating>Username</ion-label>
-      <ion-input ></ion-input>
-    </ion-item>
-
+    
     <ion-item>
       <ion-label  floating>Username</ion-label>
       <ion-input></ion-input>
@@ -26,19 +19,19 @@
       <ion-input  type="password"  ></ion-input>
     </ion-item>
     
-    <ion-item>
+    <button ion-item>
       <ion-label color="primary">Remember Me</ion-label>
       <ion-checkbox [(ngModel)]="rememberMe" [ngModelOptions]="{standalone: true}"></ion-checkbox>
-    </ion-item>
+    </button>
     <button ion-button block outline type="submit" >Login</button>
 
     
   </form>
   <button ion-button block outline (click)='signup()'>Signup</button>
-  <button ion-button block outline (click)='tabs()'>Tabs</button>
+  <!-- <button ion-button block outline (click)='tabs()'>Tabs</button> -->
 
   <p>
     <button ion-button color="primary" menuToggle>Toggle Menu</button>
   </p>
 
-
+</ion-content>

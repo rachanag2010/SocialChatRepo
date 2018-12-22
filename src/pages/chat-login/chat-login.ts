@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {  NavController, Loading } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { User } from '../../app/user';
-
+import { SignUpPage } from '../signup/signup';
 
 
 
@@ -28,11 +28,11 @@ export class ChatLoginPage {
 
   }
 
-  loading: Loading;
-  constructor(
-    public navCtrl: NavController
-) {
-    
+  signup(){
+    this.navCtrl.setRoot(SignUpPage);
   }
+
+  loading: Loading;
+  constructor(public navCtrl: NavController) {}
 
 }
