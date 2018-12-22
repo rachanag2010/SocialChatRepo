@@ -1,51 +1,11 @@
-
-       
-
-        <!-- <ion-header>
-                <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
-                        (ionCancel)="onCancel($event)" placeholder="Search For Chats or Contacts">
-        </ion-searchbar>
-        </ion-header> -->
-        <!-- <ion-content> -->
-                      
-        <ion-content padding>
-                        <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
-                        (ionCancel)="onCancel($event)" placeholder="Search For Group Conversations">
-                </ion-searchbar>
-             <ion-list>
-                <button ion-item (click)="openChatDetailsPage()">
-                        <ion-avatar item-start>
-                                <img src="..\..\..\www\assets\imgs\avatar.png">
-                        </ion-avatar>
-                        <h2>Username</h2>
-                        <!-- <h3>Don't Know What To Do!</h3> -->
-                        <p>Most recent message</p>
-                </button>
-        </ion-list>
+<ion-content padding>
+        <!-- <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+                (ionCancel)="onCancel($event)" placeholder="Search For Group Conversations">
+        </ion-searchbar> -->
+        <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
         <ion-list>
-                <button ion-item>
-                        <ion-avatar item-start>
-                                <img src="..\..\..\www\assets\imgs\avatar.png">
-                        </ion-avatar>
-                        <h2>Username</h2>
-                        <!-- <h3>Don't Know What To Do!</h3> -->
-                        <p>Most recent message</p>
+                <button ion-item *ngFor="let item of items">
+                        {{ item }}
                 </button>
         </ion-list>
-        <ion-list>
-                <button ion-item>
-                        <ion-avatar item-start>
-                                <img src="..\..\..\www\assets\imgs\avatar.png">
-                        </ion-avatar>
-                        <h2>Username</h2>
-                        <!-- <h3>Don't Know What To Do!</h3> -->
-                        <p>Most recent message</p>
-                </button>
-        </ion-list>
-
-
-
-
-
 </ion-content>
-<!-- </ion-content> -->
