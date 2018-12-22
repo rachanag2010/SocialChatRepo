@@ -1,0 +1,18 @@
+<ion-content padding>
+
+
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="username" placeholder="Enter Username"></ion-input>
+  </ion-item>
+
+  <button ion-button color="danger" (click)="save()"> Save </button>
+
+  <ion-list>
+
+    <ion-item href="#" *ngFor="let x of items">
+      {{x.name}}
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
