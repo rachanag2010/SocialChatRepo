@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ChatDetailsPage } from '../chat-details/chat-details';
 
 /**
  * Generated class for the SocialPage page.
@@ -21,5 +22,12 @@ export class RecentPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecentPage');
   }
+
+
+  openChatDetailsPage() {
+    this.navCtrl.push(ChatDetailsPage);
+  }
+  
+
 
 }

@@ -1,11 +1,11 @@
-
+<!-- 
     <ion-header>
       <ion-toolbar>
         <ion-navbar text-center	>
-          This is a placeholder for tabs name like "recent chats" or "group chat" etc.
+        
         </ion-navbar>
       </ion-toolbar>
-    </ion-header>
+    </ion-header> -->
 
 
      <!-- <div class=" tabbar show-tabbar " id="maintabs" role="tablist" persistent="true" style="top:35px;"> -->
@@ -13,13 +13,13 @@
     <ion-content>
     
       <!-- <ion-tabs  tabs-only tabsPlacement="top"> -->
-      <ion-tabs tabs-only tabsPlacement="top">
-        <ion-tab [root]="tab1Root" tabTitle="Recent Chats" tabIcon="chatIcon"></ion-tab>
-        <ion-tab [root]="tab2Root" tabTitle="Group Chats" tabIcon="chatIcon" tabBadge="23"></ion-tab>
-        <ion-tab [root]="tab3Root" tabTitle="Find Friends" tabIcon="chatIcon"></ion-tab>
-        <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="chatIcon"></ion-tab>
-      </ion-tabs>
-    </ion-content>
+          <ion-tabs tabs-only tabsPlacement="top">
+              <ion-tab [root]="tab1Root" tabTitle="Recent Chats" tabIcon="chatIcon" tabsHideOnSubPages="true"></ion-tab>
+              <ion-tab [root]="tab2Root" tabTitle="Group Chats" tabIcon="chatIcon" tabBadge="23" tabsHideOnSubPages="true"></ion-tab>
+              <ion-tab [root]="tab3Root" tabTitle="Find Friends" tabIcon="chatIcon" tabsHideOnSubPages="true"></ion-tab>
+              <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="chatIcon" tabsHideOnSubPages="true"></ion-tab>
+            </ion-tabs>
+    </ion-content> 
 
   
     
