@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GroupChatDetailsPage } from '../group-chat-details/group-chat-details';
 
-/**
- * Generated class for the SocialPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -21,5 +16,9 @@ export class GroupPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad GroupPage');
   }
+  openGroupChatDetailsPage()
+  {
+    this.navCtrl.push(GroupChatDetailsPage);
 
+  }
 }

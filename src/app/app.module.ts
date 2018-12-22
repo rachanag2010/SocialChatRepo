@@ -18,7 +18,7 @@ import { ProfileDetailsPage } from '../pages/profile-details/profile-details';
 import { AccountPage } from '../pages/account/account';
 import { PrivacyPage } from '../pages/privacy/privacy';
 import { ChatDetailsPage } from '../pages/chat-details/chat-details';
-
+import { GroupChatDetailsPage } from '../pages/group-chat-details/group-chat-details';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -40,7 +40,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfileDetailsPage,
     AccountPage,
     PrivacyPage,
-    ChatDetailsPage
+    ChatDetailsPage,
+    GroupChatDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfileDetailsPage,
     AccountPage,
     PrivacyPage,
-    ChatDetailsPage
+    ChatDetailsPage,
+    GroupChatDetailsPage
   ],
   providers: [
     StatusBar,

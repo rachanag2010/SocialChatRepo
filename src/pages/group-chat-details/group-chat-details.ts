@@ -4,17 +4,17 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 
 @IonicPage()
 @Component({
-  selector: 'page-chat-details',
-  templateUrl: 'chat-details.html',
+  selector: 'page-group-chat-details',
+  templateUrl: 'group-chat-details.html',
 })
 
 
-export class ChatDetailsPage {
+export class GroupChatDetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
-      console.log('ionViewDidLoad ChatDetailsPage');
+      console.log('ionViewDidLoad GroupChatDetailsPage');
   }
 }
