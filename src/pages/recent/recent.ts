@@ -15,6 +15,8 @@ export class RecentPage {
     this.initializeItems();
   }
   initializeItems() {
+
+    
     this.items = [
       'Amsterdam',
       'Bogota',

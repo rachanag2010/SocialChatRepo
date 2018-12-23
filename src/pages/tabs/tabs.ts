@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { App } from 'ionic-angular';
 
 import {RecentPage} from '../recent/recent';
 import { GroupPage } from '../group/group';
@@ -18,7 +19,6 @@ export class TabsPage {
   tab4Root = ProfilePage;
   
   constructor() {
-
   }
 }
 

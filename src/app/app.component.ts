@@ -38,7 +38,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = ChatLoginPage;
+  rootPage = TabsPage;
     //  rootPage = TrialHomePage;
 
   pages: Array<{title: string, component: any}>;

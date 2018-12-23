@@ -1,9 +1,9 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Testability } from '@angular/core';
 import {  NavController, NavParams, Loading, AlertController, ToastController, LoadingController } from 'ionic-angular';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 // import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 // import { UserProvider } from '../../providers/user/user';
-
+import { DatabaseProvider } from '../../providers/database/database';
 import { TabsPage } from '../tabs/tabs';
 import { User } from '../../app/user';
 import { SignUpPage } from '../signup/signup';
@@ -30,6 +30,7 @@ export class ChatLoginPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController,
+    public DbProvider: DatabaseProvider,
     // public authProvider: AuthServiceProvider,
     // public toastCtrl: ToastController,
     // private formBuilder: FormBuilder,
@@ -49,22 +50,8 @@ export class ChatLoginPage {
 
 
   login() {
-    console.log(this.uname.value,this.password.value)
-    if(this.uname.value == "admin" && this.password.value =="admin")
-    {
-      this.navCtrl.setRoot(TabsPage);
+    this.test();
     }
-    else {
-      let alert = this.alertCtrl.create(
-        {
-          title: 'Username or Password is incorrect',
-          subTitle: ' Please try again',
-          buttons: ['OK']
-        });
-        alert.present();
-    }
-
-  }
 
   presentLoadingDefault() {
     this.loading.present();
@@ -76,6 +63,28 @@ export class ChatLoginPage {
 
   signup(){
     this.navCtrl.push(SignUpPage);
+  }
+
+  test(){
+       this.DbProvider.login(this.uname.value , this.password.value).then((user:any) => {
+      // console.log(this.uname.value)
+      if( user )
+      {
+        // console.log(user.name);
+        this.navCtrl.setRoot(TabsPage);
+      }
+      else
+      {
+        // console.log("login failed");
+        let alert = this.alertCtrl.create(
+              {
+                title: 'Username or Password is incorrect',
+                subTitle: ' Please try again',
+                buttons: ['OK']
+              });
+              alert.present();
+            }
+    })
   }
 
 
