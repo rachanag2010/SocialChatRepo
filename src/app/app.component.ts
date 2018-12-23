@@ -21,6 +21,10 @@ import { PrivacyPage } from '../pages/privacy/privacy';
 import { ChatDetailsPage } from '../pages/chat-details/chat-details';
 import { GroupChatDetailsPage } from '../pages/group-chat-details/group-chat-details';
 import { UpdateProfilePage } from '../pages/update-profile/update-profile';
+import { TrialHomePage } from '../pages/trial-home/trial-home';
+import { TrialAddDataPage } from '../pages/trial-add-data/trial-add-data';
+import { TrialEditDataPage } from '../pages/trial-edit-data/trial-edit-data';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -34,8 +38,8 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = ChatLoginPage;
-    //  rootPage = TabsPage;
+  // rootPage = ChatLoginPage;
+     rootPage = TrialHomePage;
 
   pages: Array<{title: string, component: any}>;
 

@@ -3,6 +3,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+import { Toast } from '@ionic-native/toast';
 
 import { ChatLoginPage } from '../pages/chat-login/chat-login';
 import { SignUpPage } from '../pages/signup/signup';
@@ -23,6 +24,9 @@ import { PrivacyPage } from '../pages/privacy/privacy';
 import { ChatDetailsPage } from '../pages/chat-details/chat-details';
 import { GroupChatDetailsPage } from '../pages/group-chat-details/group-chat-details';
 import { UpdateProfilePage } from '../pages/update-profile/update-profile';
+import { TrialHomePage } from '../pages/trial-home/trial-home';
+import { TrialAddDataPage } from '../pages/trial-add-data/trial-add-data';
+import { TrialEditDataPage } from '../pages/trial-edit-data/trial-edit-data';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -47,7 +51,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PrivacyPage,
     ChatDetailsPage,
     GroupChatDetailsPage,
-    UpdateProfilePage
+    UpdateProfilePage,
+    TrialHomePage,
+    TrialAddDataPage,
+    TrialEditDataPage
   ],
   imports: [
     BrowserModule,
@@ -73,10 +80,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PrivacyPage,
     ChatDetailsPage,
     GroupChatDetailsPage,
-    UpdateProfilePage
+    UpdateProfilePage,
+    TrialHomePage,
+    TrialAddDataPage,
+    TrialEditDataPage
   ],
   providers: [
     SQLite,
+    Toast,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
