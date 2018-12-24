@@ -5,46 +5,41 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
     <ion-navbar>
       <ion-title>Register</ion-title>
     </ion-navbar>
-  
-  </ion-header>
-  
-  <ion-content padding>
-      <ion-grid>
+</ion-header>
+<ion-content padding>
+      
       <form (ngSubmit)="login()">
-        
-    
-        <ion-item>
+         <ion-item>
             <ion-label  floating>First Name</ion-label>
-            <ion-input></ion-input>
+            <ion-input type="text" #firstname></ion-input>
         </ion-item>
         
         <ion-item>
               <ion-label  floating>Last Name</ion-label>
-              <ion-input></ion-input>
+              <ion-input type="text" #lastname></ion-input>
         </ion-item>
   
         <ion-item>
             <ion-label floating>Username</ion-label>
-            <ion-input ></ion-input>
+            <ion-input type="text" #username ></ion-input>
           </ion-item>
         
         <ion-item>
-          <ion-label type="email"   floating>Email</ion-label>
-          <ion-input></ion-input>
+          <ion-label floating>Email</ion-label>
+          <ion-input  type="email" #email  ></ion-input>
         </ion-item>
     
         <ion-item>
           <ion-label floating>Password</ion-label>
-          <ion-input  type="password"  ></ion-input>
+          <ion-input  type="password"  #password1></ion-input>
         </ion-item>
   
         <ion-item>
             <ion-label  floating>Confirm Password</ion-label>
-            <ion-input  type="password"  ></ion-input>
+            <ion-input  type="password" #password2 ></ion-input>
           </ion-item>
          
   
@@ -56,8 +51,8 @@
               </div>
           </ion-row>
   
-          <ion-fab bottom right>
-              <button type="submit" >
+          <ion-fab  right>
+              <button type="submit" Outline> 
                   <ion-icon name="arrow-dropright" isActive=true></ion-icon>
               </button>
           </ion-fab>
@@ -65,7 +60,6 @@
       </form>
     
      
-  </ion-grid>
   </ion-content>
     
     

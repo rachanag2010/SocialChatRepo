@@ -1,4 +1,4 @@
-<ion-content padding>
+<ion-content >
         <ion-toolbar no-border-top>
                 <ion-segment [(ngModel)]="friends" color="primary">
                         <ion-segment-button value="friendsList">
@@ -13,8 +13,7 @@
                 </ion-segment>
         </ion-toolbar>
 
-
-        <ion-content>
+        <!-- <ion-content> -->
                 <div [ngSwitch]="friends">
 
                         <ion-list *ngSwitchCase="'friendsList'">
@@ -132,5 +131,5 @@
                                 </ion-item>
                         </ion-list>
                 </div>
-        </ion-content>
+        <!-- </ion-content> -->
 </ion-content>

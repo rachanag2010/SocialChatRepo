@@ -1,9 +1,9 @@
-<ion-content  overflow-scroll="false">
+<ion-content >
                         
         <!-- <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
                 (ionCancel)="onCancel($event)" placeholder="Search For Group Conversations">
         </ion-searchbar> -->
-        <ion-searchbar (ionInput)="getItems($event)" placeholder="Search For Chats"></ion-searchbar>
+        <ion-searchbar [showCancelButton]="shouldShowCancel" (ionInput)="getItems($event)" (ionCancel)="onCancel($event)" placeholder="Search For Chats"></ion-searchbar>
         <ion-list>
                 <button ion-item *ngFor="let item of items">
                         {{ item }}

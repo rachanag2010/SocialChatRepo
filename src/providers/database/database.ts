@@ -1,5 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
+import { dateSortValue, dateDataSortValue } from 'ionic-angular/umd/util/datetime-util';
+import { User } from '../../app/user';
+import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
+import { ItemSliding } from 'ionic-angular';
+import { t } from '@angular/core/src/render3';
+import { resolveDefinition } from '@angular/core/src/view/util';
 
 /*
   Generated class for the DatabaseProvider provider.
@@ -9,8 +15,9 @@ import { Storage } from '@ionic/storage';
 */
 @Injectable()
 export class DatabaseProvider {
-
-
+  names : string[];
+  items: Array<{name: string}>;
+  // items;
   private database: any;
 
   constructor(
@@ -65,18 +72,33 @@ export class DatabaseProvider {
   }
 
   getAllUsers(){
-    return new Promise((resolve) => {
-      this.storage.get('db').then((db) => {
-        resolve(db.users);
-      })
-    });
-  }
+     return new Promise((resolve) => {
+    this.storage.get('db').then((db) =>
+    {
+      let arrayItems = [];
+      
+        // for ( var i =0; i < db.rows.length; i++)
+        // {
+        //   arrayItems.push({
+        //     name : db.users.rows.name(i)
+        //   });
+        // }
+        db.users.forEach(user => { 
+        arrayItems.push( user.name)
+
+      resolve(arrayItems)
+      // console.log(arrayItems)
+        })
+    })
+    })
+  } 
+  
+  
 
   login( username, password){
     return new Promise((resolve) => {
       this.storage.get('db').then((db) => {        
         db.users.forEach(user => {     
-          // console.log(user)
                 if( user.name == username && user.password == password ){  
             resolve(user);            
           }
@@ -86,13 +108,9 @@ export class DatabaseProvider {
     });
   }
 
+  
 
   CreateUser(identification: number, name: string, lastname: string) {
-
-  }
-
-
-  GetAllUsers() {
 
   }
 
